@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         // this method is called after permissions has been granted.
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             // we are checking the permission code.
             case PERMISSION_REQUEST_CODE:
